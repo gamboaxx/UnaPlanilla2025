@@ -1,0 +1,22 @@
+# Maven
+/target/
+*.log
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Archivos compilados
+*.class
+*.jar
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
