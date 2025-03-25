@@ -8,6 +8,9 @@ import java.time.LocalDate;
 import java.util.Objects;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 /**
@@ -33,6 +36,19 @@ public class EmpleadoDto {
     private Boolean modificado;
 
     public EmpleadoDto() {
+        this.id = new SimpleStringProperty("");
+        this.nombre = new SimpleStringProperty("");
+        this.primerApellido = new SimpleStringProperty("");
+        this.segundoApellido = new SimpleStringProperty("");
+        this.cedula = new SimpleStringProperty("");
+        this.genero = new SimpleStringProperty("");
+        this.correo = new SimpleStringProperty("");
+        this.administrador = new SimpleBooleanProperty(false);
+        this.usuario = new SimpleStringProperty("");
+        this.clave = new SimpleStringProperty("");
+        this.fechaIngreso = new SimpleObjectProperty<>(LocalDate.now());
+        this.fechaSalida = new SimpleObjectProperty<>();
+        this.activo = new SimpleBooleanProperty(true);
     }
 
     public Long getId() {
@@ -157,6 +173,66 @@ public class EmpleadoDto {
 
     public void setModificado(Boolean modificado) {
         this.modificado = modificado;
+    }
+
+    public StringProperty getIdProperty() {
+        return id;
+    }
+
+    public StringProperty getNombreProperty() {
+        return nombre;
+    }
+
+    public StringProperty getPrimerApellidoProperty() {
+        return primerApellido;
+    }
+
+    public StringProperty getSegundoApellidoProperty() {
+        return segundoApellido;
+    }
+
+    public StringProperty getCedulaProperty() {
+        return cedula;
+    }
+
+    public StringProperty getGeneroProperty() {
+        return genero;
+    }
+
+    public StringProperty getCorreoProperty() {
+        return correo;
+    }
+
+    public BooleanProperty getAdministradorProperty() {
+        return administrador;
+    }
+
+    public StringProperty getUsuarioProperty() {
+        return usuario;
+    }
+
+    public StringProperty getClaveProperty() {
+        return clave;
+    }
+
+    public ObjectProperty<LocalDate> getFechaIngresoProperty() {
+        return fechaIngreso;
+    }
+
+    public ObjectProperty<LocalDate> getFechaSalidaProperty() {
+        return fechaSalida;
+    }
+
+    public BooleanProperty getActivoProperty() {
+        return activo;
+    }
+
+    public Long getVersionProperty() {
+        return version;
+    }
+
+    public Boolean getModificadoProperty() {
+        return modificado;
     }
 
     @Override
