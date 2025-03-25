@@ -4,6 +4,7 @@
  */
 package cr.ac.una.unaplanilla2025.controller;
 
+import cr.ac.una.unaplanilla2025.model.EmpleadoDto;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import io.github.palexdev.materialfx.controls.MFXCheckbox;
 import io.github.palexdev.materialfx.controls.MFXDatePicker;
@@ -12,6 +13,8 @@ import io.github.palexdev.materialfx.controls.MFXRadioButton;
 import io.github.palexdev.materialfx.controls.MFXTextField;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -63,6 +66,9 @@ public class EmpleadosController extends Controller implements Initializable {
     private MFXButton btnEliminar;
     @FXML
     private MFXButton btnGuardar;
+
+    private EmpleadoDto empleado;
+    private ObjectProperty<EmpleadoDto> empleadoProperty = new SimpleObjectProperty<>();
 
     /**
      * Initializes the controller class.

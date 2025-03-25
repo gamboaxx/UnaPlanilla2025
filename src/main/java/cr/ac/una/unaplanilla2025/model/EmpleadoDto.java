@@ -49,6 +49,7 @@ public class EmpleadoDto {
         this.fechaIngreso = new SimpleObjectProperty<>(LocalDate.now());
         this.fechaSalida = new SimpleObjectProperty<>();
         this.activo = new SimpleBooleanProperty(true);
+        this.modificado = false;
     }
 
     public Long getId() {
