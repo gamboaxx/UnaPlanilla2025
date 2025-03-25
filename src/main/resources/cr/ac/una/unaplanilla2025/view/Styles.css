@@ -59,37 +59,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     -fx-background-color:#ff6d00;
 }
 
-.jfx-btn-nuevo, .jfx-btn-nuevo:armed, .jfx-btn-nuevo:focused{
-    -fx-background-color:#2196f3;
-    
-}
-.jfx-btn-nuevo>ImageView{
-    -fx-image:url("../resources/Agregar-48.png");
-}
-
 .separator{
     -fx-background-color:-fx-base-color-focus;
 }
 
 .jfx-btn-nuevo, .jfx-btn-nuevo:armed, .jfx-btn-nuevo:focused{
     -fx-background-color:#2196f3;
-    
 }
 .jfx-btn-nuevo>ImageView{
     -fx-image:url("../resources/Agregar-48.png");
-    
-}.jfx-btn-nuevo, .jfx-btn-nuevo:armed, .jfx-btn-nuevo:focused{
-    -fx-background-color:#2196f3;
-    
 }
-.jfx-btn-nuevo>ImageView{
-    -fx-image:url("../resources/Agregar-48.png");
-    
-}.jfx-btn-nuevo, .jfx-btn-nuevo:armed, .jfx-btn-nuevo:focused{
+
+
+.jfx-btn-buscar, .jfx-btn-buscar:armed, .jfx-btn-buscar:focused{
     -fx-background-color:#2196f3;
-    
 }
-.jfx-btn-nuevo>ImageView{
+.jfx-btn-buscar>ImageView{
+    -fx-image:url("../resources/Buscar-48.png");
+    
+    
+}.jfx-btn-eliminar, .jfx-btn-eliminar:armed, .jfx-btn-eliminar:focused{
+    -fx-background-color:#2196f3;
+}
+.jfx-btn-eliminar>ImageView{
+    -fx-image:url("../resources/Eliminar-48.png");
+    
+    
+}.jfx-btn-guardar, .jfx-btn-guardar:armed, .jfx-btn-guardar:focused{
+    -fx-background-color:#2196f3;
+}
+.jfx-btn-guardar>ImageView{
     -fx-image:url("../resources/Agregar-48.png");
 }
 
@@ -111,3 +110,4 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     -fx-font-weight:bold;
     -fx-effect:dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2,0.0,1,2);
 }
+

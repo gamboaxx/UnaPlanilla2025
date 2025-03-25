@@ -6,6 +6,9 @@ package cr.ac.una.unaplanilla2025.model;
 
 import java.time.LocalDate;
 import java.util.Objects;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.StringProperty;
 
 /**
  *
@@ -13,90 +16,79 @@ import java.util.Objects;
  */
 public class EmpleadoDto {
 
-    private Long id;
-    private String nombre;
-    private String primerApellido;
-    private String segundoApellido;
-    private String cedula;
-    private String genero;
-    private String correo;
-    private Boolean administrador;
-    private String usuario;
-    private String clave;
-    private LocalDate fechaIngreso;
-    private LocalDate fechaSalida;
-    private Boolean activo;
+    private StringProperty id;
+    private StringProperty nombre;
+    private StringProperty primerApellido;
+    private StringProperty segundoApellido;
+    private StringProperty cedula;
+    private StringProperty genero;
+    private StringProperty correo;
+    private BooleanProperty administrador;
+    private StringProperty usuario;
+    private StringProperty clave;
+    private ObjectProperty<LocalDate> fechaIngreso;
+    private ObjectProperty<LocalDate> fechaSalida;
+    private BooleanProperty activo;
     private Long version;
     private Boolean modificado;
 
-    public EmpleadoDto(Long id, String nombre, String primerApellido, String segundoApellido, String cedula, String genero, String correo, Boolean administrador, String usuario, String clave, LocalDate fechaIngreso, LocalDate fechaSalida, Boolean activo, Long version, Boolean modificado) {
-        this.id = id;
-        this.nombre = nombre;
-        this.primerApellido = primerApellido;
-        this.segundoApellido = segundoApellido;
-        this.cedula = cedula;
-        this.genero = genero;
-        this.correo = correo;
-        this.administrador = administrador;
-        this.usuario = usuario;
-        this.clave = clave;
-        this.fechaIngreso = fechaIngreso;
-        this.fechaSalida = fechaSalida;
-        this.activo = activo;
-        this.version = version;
-        this.modificado = modificado;
+    public EmpleadoDto() {
     }
 
     public Long getId() {
-        return id;
+        if (this.id.get() != null && !this.id.get().isBlank()) {
+            return Long.valueOf(this.id.get());
+        } else {
+            return null;
+        }
     }
 
     public String getNombre() {
-        return nombre;
+        return nombre.get();
     }
 
     public String getPrimerApellido() {
-        return primerApellido;
+        return primerApellido.get();
     }
 
     public String getSegundoApellido() {
-        return segundoApellido;
+        return segundoApellido.get();
     }
 
     public String getCedula() {
-        return cedula;
+        return cedula.get();
     }
 
     public String getGenero() {
-        return genero;
+        return genero.get();
     }
 
     public String getCorreo() {
-        return correo;
+        return correo.get();
     }
 
     public Boolean getAdministrador() {
-        return administrador;
+        return administrador.get();
     }
 
     public String getUsuario() {
-        return usuario;
+        return usuario.get();
     }
 
     public String getClave() {
-        return clave;
+        return clave.get();
     }
 
     public LocalDate getFechaIngreso() {
-        return fechaIngreso;
+        return fechaIngreso.get();
     }
 
     public LocalDate getFechaSalida() {
-        return fechaSalida;
+        return fechaSalida.get();
     }
 
     public Boolean getActivo() {
-        return activo;
+        return activo.get();
     }
 
     public Long getVersion() {
@@ -108,55 +100,55 @@ public class EmpleadoDto {
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.id.set(id.toString());
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.nombre.set(nombre);
     }
 
     public void setPrimerApellido(String primerApellido) {
-        this.primerApellido = primerApellido;
+        this.primerApellido.set(primerApellido);
     }
 
     public void setSegundoApellido(String segundoApellido) {
-        this.segundoApellido = segundoApellido;
+        this.segundoApellido.set(segundoApellido);
     }
 
     public void setCedula(String cedula) {
-        this.cedula = cedula;
+        this.cedula.set(cedula);
     }
 
     public void setGenero(String genero) {
-        this.genero = genero;
+        this.genero.set(genero);
     }
 
     public void setCorreo(String correo) {
-        this.correo = correo;
+        this.correo.set(correo);
     }
 
     public void setAdministrador(Boolean administrador) {
-        this.administrador = administrador;
+        this.administrador.set(administrador);
     }
 
     public void setUsuario(String usuario) {
-        this.usuario = usuario;
+        this.usuario.set(usuario);
     }
 
     public void setClave(String clave) {
-        this.clave = clave;
+        this.clave.set(clave);
     }
 
     public void setFechaIngreso(LocalDate fechaIngreso) {
-        this.fechaIngreso = fechaIngreso;
+        this.fechaIngreso.set(fechaIngreso);
     }
 
     public void setFechaSalida(LocalDate fechaSalida) {
-        this.fechaSalida = fechaSalida;
+        this.fechaSalida.set(fechaSalida);
     }
 
     public void setActivo(Boolean activo) {
-        this.activo = activo;
+        this.activo.set(activo);
     }
 
     public void setVersion(Long version) {
