@@ -153,3 +153,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     -fx-font-weight:bold;
     -fx-text-fill:-fx-base-color-titulos;
 }
+
+.btn-add, .btn-add:armed, .btn-add:focused{
+    -fx-background-color:#6666ff;
+}
+.btn-add>ImageView{
+    -fx-image:url("../resources/Agregar-48.png");
+}
