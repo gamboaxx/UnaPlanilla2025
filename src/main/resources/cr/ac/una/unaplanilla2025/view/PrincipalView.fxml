@@ -13,7 +13,7 @@
    <top>
       <AnchorPane prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="190.4" layoutY="91.0" prefHeight="45.0" prefWidth="690.0" styleClass="jfx-titulo-label" text="UNA Planilla" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="182.4" layoutY="91.0" prefHeight="45.0" prefWidth="698.0" styleClass="jfx-titulo-label" text="UNA Planilla" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
          </children>
       </AnchorPane>
    </top>
