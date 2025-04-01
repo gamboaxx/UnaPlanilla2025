@@ -95,14 +95,32 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .jfx-btn-empleado, .jfx-btn-empleado:armed, .jfx-btn-empleado:focused{
     -fx-background-color:#00ccff;
 }
+.jfx-btn-empleado>ImageView{
+    -fx-image:url("../resources/Usuario-48.png");
+}
 
 .jfx-btn-tipos, .jfx-btn-tipos:armed, .jfx-btn-tipos:focused{
-    -fx-background-color:#ff9933;
+    -fx-background-color:#00ff00;
+}
+
+.jfx-btn-tipos>ImageView{
+    -fx-image:url("../resources/planilla.png");
 }
 
 .jfx-btn-salir, .jfx-btn-salir:armed, .jfx-btn-salir:focused{
     -fx-background-color:#ff0000;
 }
+.jfx-btn-salir>ImageView{
+    -fx-image:url("../resources/salir.png");
+}
+
+.jfx-btn-cerrar, .jfx-btn-cerrar:armed, .jfx-btn-cerrar:focused{
+    -fx-background-color:#ff9900;
+}
+.jfx-btn-cerrar>ImageView{
+    -fx-image:url("../resources/cerrar.png");
+}
+
 
 .jfx-panel-fondo{
     -fx-background-color:#2196f3;
