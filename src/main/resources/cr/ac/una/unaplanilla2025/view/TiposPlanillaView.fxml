@@ -34,7 +34,7 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <VBox layoutX="29.0" layoutY="23.0" prefHeight="312.0" prefWidth="614.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <VBox layoutX="29.0" layoutY="23.0" prefHeight="312.0" prefWidth="614.0" styleClass="jfx-contenedor-principal" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                                        <children>
                                           <HBox>
                                              <children>
