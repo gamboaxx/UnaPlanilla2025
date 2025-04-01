@@ -72,24 +72,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 
 .jfx-btn-buscar, .jfx-btn-buscar:armed, .jfx-btn-buscar:focused{
-    -fx-background-color:#2196f3;
+    -fx-background-color:#006666;
 }
 .jfx-btn-buscar>ImageView{
     -fx-image:url("../resources/Buscar-48.png");
     
     
 }.jfx-btn-eliminar, .jfx-btn-eliminar:armed, .jfx-btn-eliminar:focused{
-    -fx-background-color:#2196f3;
+    -fx-background-color:#ff0033;
 }
 .jfx-btn-eliminar>ImageView{
     -fx-image:url("../resources/Eliminar-48.png");
     
     
 }.jfx-btn-guardar, .jfx-btn-guardar:armed, .jfx-btn-guardar:focused{
-    -fx-background-color:#2196f3;
+    -fx-background-color:#00ff66;
 }
 .jfx-btn-guardar>ImageView{
     -fx-image:url("../resources/Agregar-48.png");
+}
+
+.jfx-btn-empleado, .jfx-btn-empleado:armed, .jfx-btn-empleado:focused{
+    -fx-background-color:#0000cc;
+}
+
+.jfx-btn-tipos, .jfx-btn-tipos:armed, .jfx-btn-tipos:focused{
+    -fx-background-color:#ff9933;
+}
+
+.jfx-btn-salir, .jfx-btn-salir:armed, .jfx-btn-salir:focused{
+    -fx-background-color:#ff0000;
 }
 
 .jfx-panel-fondo{
@@ -111,3 +123,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     -fx-effect:dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2,0.0,1,2);
 }
 
+.jfx-contenedor-principal {
+    -fx-background-color: white;
+    -fx-background-radius: 4.0;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 10.0, 0.7, 0.0, 1.5);
+}
+
+.label-second{
+    -fx-font-size:16px;
+    -fx-padding:5 0 5 0;
+    -fx-font-weight:bold;
+    -fx-text-fill:-fx-base-color-titulos;
+}
