@@ -12,6 +12,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.CheckBox;
+import javafx.scene.image.ImageView;
 
 /**
  * FXML Controller class
@@ -42,6 +43,8 @@ public class TiposPlanillaController extends Controller implements Initializable
     private MFXTextField txtIdEmployee;
     @FXML
     private MFXTextField txtName;
+    @FXML
+    private ImageView imgAdd;
 
     /**
      * Initializes the controller class.
