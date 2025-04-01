@@ -22,6 +22,8 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         FlowController.getInstance().InitializeFlow(stage, null);
         scene = new Scene(loadFXML("LogInView"), 640, 480);
+        stage.setMinHeight(500);
+        stage.setMinWidth(700);
          MFXThemeManager.setOn(scene, Themes.DEFAULT,Themes.LEGACY);
         stage.setScene(scene);
         stage.show();
