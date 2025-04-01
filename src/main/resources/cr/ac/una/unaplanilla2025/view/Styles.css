@@ -93,7 +93,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 }
 
 .jfx-btn-empleado, .jfx-btn-empleado:armed, .jfx-btn-empleado:focused{
-    -fx-background-color:#0000cc;
+    -fx-background-color:#00ccff;
 }
 
 .jfx-btn-tipos, .jfx-btn-tipos:armed, .jfx-btn-tipos:focused{
