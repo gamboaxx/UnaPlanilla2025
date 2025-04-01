@@ -160,3 +160,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .btn-add>ImageView{
     -fx-image:url("../resources/Agregar-48.png");
 }
+
+.imgLogo1>ImageView{
+    -fx-image:url("../resources/FondoInicioRojo.png");
+}
+
+.imgLogo2>ImageView{
+    -fx-image:url("../resources/LogoUNArojo.png");
+}
